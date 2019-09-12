@@ -4,10 +4,13 @@ def nyc_pigeon_organizer(data)
     data[key1].each_key do |key2|
       i = 0
       while data[key1][key2].length>i  do 
-        if (!hash.key?(data[key1][key2][i]) && key1 = :color) || data[key1][key2].count(data[key1][key2][i])>1 
-          hash[data[key1][key2][i]] = {
-            :color => ["#{key2}"]
+        array_key2 = []
+        if !hash.key?(data[key1][key2][i])
+          hash[data[key1][key2][i]]= {
+            key1 => array_key2.push("#{key2}")
           }
+        else 
+          hash[data[key1][key2][i]][key1] = array_key2.push("#{key2}")
         end 
         i +=1 
       end 
