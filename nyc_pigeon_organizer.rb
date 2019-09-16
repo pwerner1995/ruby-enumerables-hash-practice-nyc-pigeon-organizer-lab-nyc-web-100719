@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
           hash[name][key1]= hash[name][key1].push("#{key2}")
         else 
           hash[name]= {
-            key1 => array_key2.push("#{key2}")
+            key1 => hash[name][key1].push("#{key2}")
           }
         end 
         i +=1
