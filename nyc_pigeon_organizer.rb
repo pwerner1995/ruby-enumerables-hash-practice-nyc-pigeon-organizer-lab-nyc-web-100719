@@ -1,14 +1,12 @@
 def nyc_pigeon_organizer(data)
   hash= {}
   array_key2= []
-  name = ""
   data.each_key do |key1|
-    
     data[key1].each_key do |key2|
       i = 0
       while data[key1][key2].length>i  do 
         name = data[key1][key2][i]
-        if !hash.key?(name)
+        if !hash.key?(name) 
           array_key2=[]
           hash[name]= {
             key1 => array_key2.push("#{key2}")
@@ -17,10 +15,9 @@ def nyc_pigeon_organizer(data)
           hash[name][key1]= array_key2.push("#{key2}")
         end 
         i +=1
-        array_key2=[]
-        puts array_key2
+        array_key2 =[]
       end 
     end 
-  end 
+  end
   p hash 
 end
