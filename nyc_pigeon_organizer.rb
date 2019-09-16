@@ -19,7 +19,10 @@ def nyc_pigeon_organizer(data)
           hash[name][key1]= array_key2.push("#{key2}")
         end 
         i +=1
-        array_key2 =[]
+        if !data[:color][:grey].include?(name) or !data[:color][:white].include?(name)
+          array_key2 =[]
+        end 
+        
       end 
     end 
   end
