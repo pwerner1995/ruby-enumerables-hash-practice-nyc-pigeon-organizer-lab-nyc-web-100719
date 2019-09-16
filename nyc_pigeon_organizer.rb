@@ -17,6 +17,8 @@ def nyc_pigeon_organizer(data)
           #end 
         elsif hash[name].key?(key1)
           hash[name][key1]= array_key2.push("#{key2}")
+        else 
+          
         end 
         i +=1
         array_key2 =[] 
