@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
           #if !hash[name].value?("#{key2}")
            # hash[name][key1]<<("#{key2}")
           #end 
-        elsif !array_key2.include?("#{key2}") 
+        elsif hash[name].key?(key1)
           hash[name][key1]= array_key2.push("#{key2}")
         end 
         i +=1
