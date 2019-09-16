@@ -1,6 +1,5 @@
 def nyc_pigeon_organizer(data)
   hash= {}
-  array_key2= []
   data.each_key do |key1|
     data[key1].each_key do |key2|
       i = 0
