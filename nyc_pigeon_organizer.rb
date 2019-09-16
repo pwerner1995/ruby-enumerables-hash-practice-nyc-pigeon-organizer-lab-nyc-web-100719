@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
           hash[name][key1] = ["#{key2}"]
         end 
         i +=1
-        array_key2 =[] 
+        
         
       end 
     end 
