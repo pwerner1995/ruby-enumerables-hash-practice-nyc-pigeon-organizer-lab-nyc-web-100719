@@ -6,8 +6,7 @@ def nyc_pigeon_organizer(data)
       i = 0
       while data[key1][key2].length>i  do 
         name = data[key1][key2][i]
-        if !hash.key?(name) 
-          array_key2=[]
+        if !hash.key?(name)
           hash[name]= {
             key1 => ["#{key2}"]
           }
